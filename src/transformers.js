@@ -26,6 +26,7 @@ const {
     pipeline
 } = require("./pipelines.js");
 const { env } = require('./env.js');
+const { getModelFile } = require('./utils.js');
 
 
 const moduleExports = {
@@ -55,7 +56,10 @@ const moduleExports = {
     pipeline,
 
     // environment variables
-    env
+    env,
+    
+    // utils
+    getModelFile
 };
 
 // Allow global access to these variables
