@@ -28,6 +28,7 @@ const {
 const { env } = require('./env.js');
 const { getModelFile } = require('./utils.js');
 
+const { Tensor } = require('./tensor_utils.js');
 
 const moduleExports = {
     // Tokenizers
@@ -54,6 +55,7 @@ const moduleExports = {
 
     // other
     pipeline,
+    Tensor,
 
     // environment variables
     env,
